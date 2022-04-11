@@ -1,0 +1,320 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/*Remove this rule on your HTML elements as you start to fill them with content*/
+
+.boxColor {
+	color: #fff;
+	background: #000;
+	text-align: center;
+	margin: 0;
+}
+
+/*basic reset*/
+
+/*browsers have built in values for elements so we'll reset a few things to zero, you can add to this or remove items as needed*/
+
+div,p,body,header,footer,section,article,nav { 
+	margin: 0; 
+	padding: 0; 
+}	
+
+img { 
+	border: none; /*Remove border if image is a link*/
+	margin: 0; 
+	padding: 0; 
+}
+
+/*html selectors*/
+
+body {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 12px;
+	color: #333;
+
+}
+
+/* Remove underlines from links */
+
+a {
+	text-decoration: none;
+}
+
+/*hide elements from browser but show for doc outline*/
+
+.hidden {
+	display: none;
+}
+
+
+/*Common page elements  */
+
+/*This is essentially a box that we place the whole site in.  
+We center the box using margin 0 auto and give it a fixed width of 920 + 20px + 20px (960px) so it fits on 1024x768 screens.*/
+
+#container {
+	margin: 0 auto;
+	width: 920px;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-top: 40px;
+	padding-bottom: 20px;
+	/* this is our grid based off of our photoshop file */
+	display: grid;
+	grid-template-columns: repeat(10, 74px);
+	grid-column-gap: 20px;
+	grid-row-gap: 80px;
+
+	background-color: #efecdb;
+	border-top: solid 20px #7d8672;
+	border-bottom: solid 20px #7d8672;
+}
+
+#mainHeader {
+	/* makes the grid ignore this element */
+	display: contents;
+}
+
+#logo {
+	grid-column: 1/3;
+	/* Remove as content will dictate height */
+}
+#logo img{
+	width: 100%;
+}
+
+#mainNav {
+	grid-column: 5/11;
+	/* Remove as content will dictate height */
+	height: 100px;
+	padding-left: 20%;
+}
+#mainNav ul{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	width: 100%;
+	text-align: justify;
+	top: 25px;
+	position: relative;
+}
+#mainNav ul:after {
+	content: '';
+	display: inline-block;
+	width: 100%;
+	height: 0;
+}
+#mainNav li{
+	border-right: 1px solid black;
+	display: inline-block;
+	padding: 0 30px 0;
+}
+a{
+	color: black;
+}
+#mainNav a:hover{
+	color: #c59b6d;
+}
+.selected a{
+	color: #c59b6d;;
+	text-decoration: underline;
+}
+
+main {
+	/* makes the grid ignore this element */
+	display: contents;
+}
+
+#mainFooter {
+	/* makes the grid ignore this element */
+	display: contents;
+}
+
+#footerNav {
+	grid-column: 1/6;
+	/* Remove as content will dictate height */
+	height: 100px;
+}
+#footerNav ul{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	width: 100%;
+	text-align: justify;
+	top: 25px;
+	position: relative;
+}
+#footerNav ul:after {
+	content: '';
+	display: inline-block;
+	width: 100%;
+	height: 0;
+}
+#footerNav li{
+	border-right: 1px solid black;
+	display: inline-block;
+	padding: 0 30px 0;
+}
+
+#copyRight{
+	grid-column: 8/11;
+	/* Remove as content will dictate height */
+	height: 100px;
+}
+
+#copyRight a img{
+	width: 50px;
+	height: 50px;
+}
+#tg{margin-left: 13px}
+#ig{margin: 0 39px}
+
+/* Unique Page Elements */
+
+/* page 1 */
+
+#heroImage {
+	grid-column: 1/7;
+	/* Remove as content will dictate height */
+	height: 250px;
+	text-align: center;
+	position: relative;
+
+}
+#heroImage h1{
+	width: 80%;
+	margin: 20px auto;
+	font-size: 36px;
+	color: #7d8672;
+}
+
+#heroImage button{
+	font-weight: bold;
+	background-color: #7d8672;
+	border: none;
+	padding: 12px 30px;
+	border-radius: 39px;
+	width: 80%;
+	position: absolute;
+	bottom: 25px;
+	left: 50%;
+	transform: translate(-50%, 0);
+	font-size: 16px;
+}
+#heroImage button:hover{
+	background-color: black;
+}
+#heroImage a{
+	color: #efecdb;
+}
+
+#heroText {
+	grid-column: 8/11;
+	/* Remove as content will dictate height */
+	height: 250px;
+}
+#heroText img{
+	width: 100%;
+	height: 100%;
+}
+
+#product1 {
+	grid-column: 1/4;
+	/* Remove as content will dictate height */
+	height: 300px;
+	position: relative;
+}
+
+#product2 {
+	grid-column: 4/8;
+	/* Remove as content will dictate height */
+	height: 300px;
+	position: relative;
+}
+#projectsTitle{
+	color: #7d8672;
+	text-align: center;
+	font-size: 27px;
+	margin: 0 0 10px;
+}
+
+#product3 {
+	grid-column: 8/11;
+	/* Remove as content will dictate height */
+	height: 300px;
+	position: relative;
+}
+.productImg{
+	object-fit: cover;
+	object-position: top;
+	width: 233px;
+	height: 233px;
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	transform: translate(-50%, 0);
+}
+
+/* page 2 */
+
+#contactLeft {
+	grid-column: 1/6;
+	/* Remove as content will dictate height */
+	height: 630px;
+}
+
+#contactRight {
+	grid-column: 6/11;
+	/* Remove as content will dictate height */
+	height: 630px;
+}
+
+
+/* page 3 */
+
+#service1 {
+	grid-column: 1/4;
+	/* Remove as content will dictate height */
+	height: 250px;
+}
+
+#service2 {
+	grid-column: 4/8;
+	/* Remove as content will dictate height */
+	height: 250px;
+}
+
+#service3 {
+	grid-column: 8/11;
+	/* Remove as content will dictate height */
+	height: 250px;
+}
+
+#banner {
+	grid-column: 1/11;
+	/* Remove as content will dictate height */
+	height: 300px;
+}
+
+
+/* page 4 */
+
+#heroFull {
+	grid-column: 1/11;
+	/* Remove as content will dictate height */
+	height: 250px;
+}
+
+#specialOfferLeft {
+	grid-column: 1/6;
+	/* Remove as content will dictate height */
+	height: 300px;
+}
+
+#specialOfferRight {
+	grid-column: 6/11;
+	/* Remove as content will dictate height */
+	height: 300px;
+}
+
+
