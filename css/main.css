@@ -156,6 +156,10 @@ main {
 	padding: 0 30px 0;
 }
 
+#footerNav a:hover{
+	color: #c59b6d;
+}
+
 #copyRight{
 	grid-column: 8/11;
 	/* Remove as content will dictate height */
@@ -297,24 +301,59 @@ main {
 }
 
 
-/* page 4 */
+/* page About Me*/
 
 #heroFull {
 	grid-column: 1/11;
 	/* Remove as content will dictate height */
 	height: 250px;
+	text-align: center;
+}
+#heroFull h1{
+	margin: 0 0 10px;
+	text-align: center;
+	font-size: 40px;
+	color: #7d8672;
+
+}
+#heroFull img{
+	width: 150px;
+	height: 150px;
+	margin:0 10px;
+	border: 1px solid black;
 }
 
 #specialOfferLeft {
 	grid-column: 1/6;
 	/* Remove as content will dictate height */
 	height: 300px;
+	text-align: center;
 }
+#specialOfferLeft img{
+	height: 100%;
+	border: 1px solid black;
+}
+
 
 #specialOfferRight {
 	grid-column: 6/11;
 	/* Remove as content will dictate height */
 	height: 300px;
 }
+#specialOfferRight h2{
+	margin: 0 0 20px;
+	font-weight: bold;
+	text-align: center;
+	color: #7d8672;
+	font-size: 30px;
+}
+#specialOfferRight p{
+	text-align: center;
+	color: #c59b6d;
+	width: 80%;
+	margin: auto;
+	font-size: 17px;
+}
+
 
 
