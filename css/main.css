@@ -97,7 +97,7 @@ We center the box using margin 0 auto and give it a fixed width of 920 + 20px + 
 	/* Remove as content will dictate height */
 }
 #logo img{
-	width: 100%;
+	width: 170px;
 }
 
 #mainNav {
@@ -112,7 +112,7 @@ We center the box using margin 0 auto and give it a fixed width of 920 + 20px + 
 	list-style: none;
 	width: 100%;
 	text-align: justify;
-	top: 25px;
+	top: 43px;
 	position: relative;
 }
 #mainNav ul:after {
