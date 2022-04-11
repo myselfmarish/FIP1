@@ -69,6 +69,23 @@ We center the box using margin 0 auto and give it a fixed width of 920 + 20px + 
 	border-top: solid 20px #7d8672;
 	border-bottom: solid 20px #7d8672;
 }
+#containerPrices{
+	margin: 0 auto;
+	width: 920px;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-top: 40px;
+	padding-bottom: 20px;
+	/* this is our grid based off of our photoshop file */
+	display: grid;
+	grid-template-columns: repeat(10, 74px);
+	grid-column-gap: 20px;
+	grid-row-gap: 80px;
+
+	background-color: #7d8672;
+	border-top: solid 20px #efecdb;
+	border-bottom: solid 20px #efecdb;
+}
 
 #mainHeader {
 	/* makes the grid ignore this element */
@@ -119,7 +136,13 @@ a{
 	color: #c59b6d;;
 	text-decoration: underline;
 }
-
+.selectedWhite a{
+	color: #efecdb;
+	text-decoration: underline;
+}
+.selectedWhite a:hover{
+	color: #efecdb;
+}
 main {
 	/* makes the grid ignore this element */
 	display: contents;
@@ -259,7 +282,7 @@ main {
 	transform: translate(-50%, 0);
 }
 
-/* page 2 */
+/* Prices page */
 
 #contactLeft {
 	grid-column: 1/6;
@@ -272,8 +295,54 @@ main {
 	/* Remove as content will dictate height */
 	height: 630px;
 }
-
-
+.panel{
+	background-color: #efecdb;
+	text-align: center;
+	color: #7d8672;
+	position: relative;
+}
+.panel h3{
+	font-size: 27px;
+	margin:10px 0 ;
+}
+.panel p{
+	color: #c59b6d;
+	font-size: 15px;
+}
+.panel span{
+	font-size: 30px;
+	font-weight: bold;
+}
+.panel ol{
+	width: 60%;
+	margin: auto;
+	font-size: 22px;
+	font-weight: 200;
+}
+.panel li{
+	margin: 10px 0;
+}
+.panel button{
+	border-radius: 28px;
+	display: block;
+	margin: 0 auto 10px;
+	border: none;
+	background-color: #7d8672;
+	color: #efecdb;
+	padding: 8px;
+	width: 220px;
+	font-weight: bold;
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	transform: translate(-50%, 0);
+}
+.panel button a {
+	color: #efecdb;
+}
+.panel button:hover {
+	background-color: black;
+}
 /* page 3 */
 
 #service1 {
@@ -423,3 +492,6 @@ main {
 	margin: 0 0 20px;
 }
 
+button{
+	cursor: pointer;
+}
